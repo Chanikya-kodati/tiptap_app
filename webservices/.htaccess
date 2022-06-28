@@ -1,0 +1,80 @@
+<IfModule mod_rewrite.c>
+# Turn rewrite engine on
+#Options +FollowSymlinks
+RewriteEngine on
+
+# map neat URL to internal URL
+
+RewriteRule ^tiptap/aboutus$   RestController.php?page_key=aboutus [nc,qsa]
+
+RewriteRule ^tiptap/landingbanners$   RestController.php?page_key=landingbanners [nc,qsa]
+
+RewriteRule ^tiptap/welcomebanner$   RestController.php?page_key=welcomebanner [nc,qsa]
+
+RewriteRule ^tiptap/privacypolicy$   RestController.php?page_key=privacypolicy [nc,qsa]
+
+RewriteRule ^tiptap/termsofuse$   RestController.php?page_key=termsofuse [nc,qsa]
+
+RewriteRule ^tiptap/community$   RestController.php?page_key=community [nc,qsa]
+
+RewriteRule ^tiptap/tipamounts$   RestController.php?page_key=tipamounts [nc,qsa]
+
+RewriteRule ^tiptap/wallettopups$   RestController.php?page_key=wallettopups [nc,qsa]
+
+RewriteRule ^tiptap/contactus$   RestController.php?page_key=contactus [nc,qsa]
+
+RewriteRule ^tiptap/changepassword$   RestController.php?page_key=changepassword [nc,qsa]
+
+RewriteRule ^tiptap/usersignup$   RestController.php?page_key=usersignup [nc,qsa]
+
+RewriteRule ^tiptap/otpscreen$   RestController.php?page_key=otpscreen [nc,qsa]
+
+RewriteRule ^tiptap/userlogin$   RestController.php?page_key=userlogin [nc,qsa]
+
+RewriteRule ^tiptap/giverreceiverbanners$   RestController.php?page_key=giverreceiverbanners [nc,qsa]
+
+RewriteRule ^tiptap/myprofile$   RestController.php?page_key=myprofile [nc,qsa]
+
+RewriteRule ^tiptap/industrytype$   RestController.php?page_key=jobindustrytype [nc,qsa]
+
+RewriteRule ^tiptap/bankinfoupdate$   RestController.php?page_key=bankinfoupdate [nc,qsa]
+
+RewriteRule ^tiptap/companysignup$   RestController.php?page_key=companysignup [nc,qsa]
+
+RewriteRule ^tiptap/singleworkersignup$   RestController.php?page_key=singleworkersignup [nc,qsa]
+
+RewriteRule ^tiptap/jobtype$   RestController.php?page_key=jobtype [nc,qsa]
+
+RewriteRule ^tiptap/topupgiverwallet$   RestController.php?page_key=topupgiverwallet [nc,qsa]
+
+RewriteRule ^tiptap/giverwalletbalance$   RestController.php?page_key=giverwalletbalance [nc,qsa]
+
+RewriteRule ^tiptap/getcompanytipreceiver$   RestController.php?page_key=getcompanytipreceiver [nc,qsa]
+
+RewriteRule ^tiptap/bankslist$   RestController.php?page_key=bankslist [nc,qsa]
+
+RewriteRule ^tiptap/qrscanner$   RestController.php?page_key=qrscanner [nc,qsa]
+
+RewriteRule ^tiptap/givetip$   RestController.php?page_key=givetip [nc,qsa]
+
+RewriteRule ^tiptap/receivertipshistory$   RestController.php?page_key=receivertipshistory [nc,qsa]
+
+RewriteRule ^tiptap/givertipshistory$   RestController.php?page_key=givertipshistory [nc,qsa]
+
+RewriteRule ^tiptap/withdrawtipamount$   RestController.php?page_key=withdrawtipamount [nc,qsa]
+
+RewriteRule ^tiptap/paymentresult$   RestController.php?page_key=paymentresult [nc,qsa]
+
+RewriteRule ^tiptap/forgotpassword$   RestController.php?page_key=forgotpassword [nc,qsa]
+
+RewriteRule ^tiptap/profilepicture$   RestController.php?page_key=profilepicture [nc,qsa]
+
+RewriteRule ^tiptap/updateprofile$   RestController.php?page_key=updateprofile [nc,qsa]
+
+RewriteRule ^tiptap/loginwithsocial$   RestController.php?page_key=loginwithsocial [nc,qsa]
+
+RewriteRule ^tiptap/forgotpassotp$   RestController.php?page_key=forgotpassotp [nc,qsa]
+
+RewriteRule ^tiptap/giverreceiverprofilebanners$   RestController.php?page_key=giverreceiverprofilebanners [nc,qsa]
+
+</IfModule>

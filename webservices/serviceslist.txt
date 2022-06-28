@@ -1,0 +1,211 @@
+Service: About Us
+http://localhost/tiptap/webservices/tiptap/aboutus
+Method			POST
+Accept			application/json
+
+Service: Landing Banners
+http://localhost/tiptap/webservices/tiptap/landingbanners
+Method			POST
+Accept			application/json
+
+Service: Welcome Banner
+http://localhost/tiptap/webservices/tiptap/welcomebanner
+Method			POST
+Accept			application/json
+
+Service: Privacy Policy
+http://localhost/tiptap/webservices/tiptap/privacypolicy
+Method			POST
+Accept			application/json
+
+Service: Terms of Use
+http://localhost/tiptap/webservices/tiptap/termsofuse
+Method			POST
+Accept			application/json
+
+Service: Community
+http://localhost/tiptap/webservices/tiptap/community
+Method			POST
+Accept			application/json
+
+Service: Choose Tip Amounts
+http://localhost/tiptap/webservices/tiptap/tipamounts
+Method			POST
+Accept			application/json
+
+Service: Choose Wallet Topup Amount
+http://localhost/tiptap/webservices/tiptap/wallettopups
+Method			POST
+Accept			application/json
+
+Service: Contact Us
+http://localhost/tiptap/webservices/tiptap/contactus
+Method			POST
+Accept			application/json
+
+Parameters: name, mobile, comments
+
+
+Service: User Signup
+http://localhost/tiptap/webservices/tiptap/usersignup
+Method			POST
+Accept			application/json
+
+Parameters: name, mobile, countryid, email, usertype(1-Normal;2-Company), password, confpassword, giverorreceiver(1-giver;2-receiver)
+Response: 0-User Already Exist; 1-Success; 2-Confirmation password not matching;
+
+
+http://localhost/tiptap/webservices/tiptap/otpscreen
+Method			POST
+Accept			application/json
+Content-Type	application/x-www-form-urlencoded
+
+mobile=651205081; otp=171696;
+
+
+Service: Industry Type
+http://localhost/tiptap/webservices/tiptap/jobindustrytype
+Method			POST
+Accept			application/json
+
+Service: Company Signup
+http://localhost/tiptap/webservices/tiptap/companysignup
+Method			POST
+Accept			application/json
+
+Parameters: companyname, mobile, countryid, email, representativename, branchlocation, noofemp, industrytype
+
+Response: 0-User Already Exist; 1-Success;
+
+
+Service: Change Password
+http://localhost/tiptap/webservices/tiptap/changepassword
+Method			POST
+Accept			application/json
+
+Parameters: oldpass, newpass, retypepass, loginid
+Response: 1-Success ;2-Conf pass not match ;3-DB pass not match
+
+
+Service: User Login
+http://localhost/tiptap/webservices/tiptap/userlogin
+Method			POST
+Accept			application/json
+
+Parameters: mobile, password
+
+Service: Giver Receiver Banners
+http://localhost/tiptap/webservices/tiptap/giverreceiverbanners
+Method			POST
+Accept			application/json
+
+Service: My Profile
+http://localhost/tiptap/webservices/tiptap/myprofile
+Method			POST
+Accept			application/json
+
+Parameters: userid
+
+
+Service: Update Bank Information
+http://localhost/tiptap/webservices/tiptap/bankinfoupdate
+Method			POST
+Accept			application/json
+
+Parameters: userid,bankname,accountnumber,ibannum,swiftcode
+
+
+Service: Single Worker Signup
+http://localhost/tiptap/webservices/tiptap/singleworkersignup
+Method			POST
+Accept			application/json
+
+Parameters: name, mobile, countryid, usertype(1-Normal), password, confpassword, giverorreceiver(2-receiver), location, jobtype
+
+Response: 0-User Already Exist; 1-Success; 2-Confirmation password not matching;
+
+Service: Job Type
+http://localhost/tiptap/webservices/tiptap/jobtype
+Method			POST
+Accept			application/json
+
+Service: Topup Giver Wallet
+http://localhost/tiptap/webservices/tiptap/topupgiverwallet
+Method			POST
+Accept			application/json
+
+Parameters: giverid, amountid
+
+Response: 1-Success ;0-Fail
+
+Service: Giver Wallet Balance & No of Tips given
+http://localhost/tiptap/webservices/tiptap/giverwalletbalance
+Method			POST
+Accept			application/json
+
+Service: Company Receiver Login with TipCode/mobile,password
+http://localhost/tiptap/webservices/tiptap/getcompanytipreceiver
+Method			POST
+Accept			application/json
+
+Parameters: tipcode, mobile, password
+
+
+Service: Banks List
+http://localhost/tiptap/webservices/tiptap/bankslist
+Method			POST
+Accept			application/json
+
+
+Service: QR scanner
+http://localhost/tiptap/webservices/tiptap/qrscanner
+Method			POST
+Accept			application/json
+
+Parameters: userid
+
+Service: Give Tip
+http://localhost/tiptap/webservices/tiptap/givetip
+Method			POST
+Accept			application/json
+
+Parameters: giverid,receiverid,amountid
+
+
+Service: Receiver Tips History
+http://localhost/tiptap/webservices/tiptap/receivertipshistory
+Method			POST
+Accept			application/json
+
+Parameters: receiverid
+
+
+Service: Giver Tips History
+http://localhost/tiptap/webservices/tiptap/givertipshistory
+Method			POST
+Accept			application/json
+
+Parameters: giverid
+
+
+Service: Withdraw Tip Amount
+http://localhost/tiptap/webservices/tiptap/withdrawtipamount
+Method			POST
+Accept			application/json
+
+Parameters: receiverid, amount
+
+
+Service: Giver Receiver profile Banners
+http://localhost/tiptap/webservices/tiptap/giverreceiverprofilebanners
+Method			POST
+Accept			application/json
+
+
+
+
+
+
+
+
+
